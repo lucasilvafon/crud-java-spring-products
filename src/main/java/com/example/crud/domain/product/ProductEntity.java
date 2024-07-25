@@ -19,10 +19,13 @@ public class ProductEntity {
 
     private Integer price_in_cents;
 
+    private Boolean active;
+
     //Construtor da classe-> quando instancia passa parametros default para salvar os atributos
     public ProductEntity(RequestProductDTO requestProductDTO){
         this.name = requestProductDTO.name();
         this.price_in_cents = requestProductDTO.price_in_cents();
+        this.active = true;
     }
 
 }
